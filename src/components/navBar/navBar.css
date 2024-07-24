@@ -1,0 +1,64 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar-item {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-item:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      text-align: center;
+      background-color: #333;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  
+    .navbar-menu.is-active {
+      display: flex;
+    }
+  
+    .navbar-toggler {
+      display: block;
+    }
+  }
