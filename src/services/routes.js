@@ -1,7 +1,6 @@
 const API_KEY = "5dcb6bfbe78b4c5381f19cfff3babd93";
 const URL = 'https://newsapi.org/v2/top-headlines?country=ua&apiKey=' + API_KEY;
 
-
 const getNews = async () => {
     try {
         const response = await fetch(URL);
